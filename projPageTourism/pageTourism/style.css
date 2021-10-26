@@ -1,0 +1,145 @@
+
+/* Configurações Gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+/* _________________________________________________________________ */
+
+/* Tratar responsividade das imgs */
+
+div img {
+    display: block;
+    width: 100%;
+}
+/* _________________________________________________________________ */
+
+/* Configurações do "Container" */
+
+.flex-container{
+    display: flex;
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+}
+/* _________________________________________________________________ */
+
+/* Configiração do Cabeçalho  */
+
+header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+header .list-items{
+    display: flex;
+    width: 100%;
+    max-width: 260px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+.list-items li a{
+    color: white;   
+}
+/* _________________________________________________________________ */
+
+ /* Inicio dos Setores */
+
+ /* Setor 01 - Pagina para Turistas*/
+
+ .setor01{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .setor01 .texto-setor01{
+    min-height: 200px;
+ }
+
+ .texto-setor01 h1{
+    color: blue;
+    font-family: arial;
+    font-size: 48px;
+    margin-bottom: 20px;
+ }
+
+ .texto-setor01 p{
+    margin-bottom: 10px;
+    font-size: 20px;
+ }
+
+ .texto-setor01 a{
+    background-color: blue;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: block;
+    width: 236px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+ }
+/* _________________________________________________________________ */
+
+ /* Setor 02 "Quem Somos" */
+
+ #setor02{
+    flex-direction: row-reverse;
+    /* height: 60vh; */
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ #setor02 h2{
+     color: blue;
+     font-size: 40px;
+     font-weight: bold;
+     margin-bottom: 20px;
+     display: flex;
+ }
+
+ #setor02 h2::before{
+     content: "";
+     height: 50px;
+     width: 5px;
+     margin-right: 5px;
+     background-color: blue;
+     position: relative;
+ }
+
+ #setor02 p{
+     margin-bottom: 10px;
+     width: 90%;
+     font-size: 20px;
+     font-family: 'Cambria, Cochin, Georgia, Times';
+ }
+
+#setor02 .img-quem-somos{
+    min-width: 500px;
+}
+
